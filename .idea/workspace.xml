@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/runtime/operators/windowing/WindowOperator.java" description="window reducingstate累加" line="393" mnemonic="1" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="708dd3a1-5e1c-4496-a80b-4c247913debb" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="flink-java" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/daijiguo/sql/SqlDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.12/1.11.1/flink-streaming-java_2.12-1.11.1-sources.jar!/org/apache/flink/streaming/api/datastream/WindowedStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="743" column="6" selection-start-line="743" selection-start-column="6" selection-end-line="743" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>5</find>
+      <find>CleanupStrategies</find>
+      <find>FULL_STATE_SCAN_SNAPSHOT</find>
+      <find>sqlque</find>
+      <find>51</find>
+      <find>snapshotState(</find>
+      <find>transactionManager</find>
+      <find>FlinkKafkaInternalProducer</find>
+      <find>initial</find>
+      <find>StreamingJob</find>
+      <find>env.socketTextStream</find>
+      <find>1.9.</find>
+      <find>flink.version</find>
+      <find>checkpoint</find>
+      <find>registerDataStream</find>
+      <find>select</find>
+      <find>tableenv</find>
+      <find>version</find>
+      <find>1.10.1</find>
+      <find>table</find>
+      <find>kafka</find>
+      <find>JSON</find>
+      <find>startup-mode</find>
+      <find>confluent</find>
+      <find>proc_time</find>
+      <find>port</find>
+      <find>web</find>
+      <find>2.11</find>
+      <find>rest</find>
+      <find>ebirthday</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/java/cn/_51doit/flink</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day05/RestartStrategiesDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day02/sources/KafkaSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day03/window/CountWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/_51doit/flink/daijiguo/CountUdaf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/_51doit/flink/daijiguo/udaf/CountUdaf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day05/MapWithState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day01/StreamWordCount.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/_51doit/flink/daijiguo/sql/SqlDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day07/MySqlTwoPhaseCommitSink.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Flink Quickstart Job" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="CatdeaLogs" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flink-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_duoyi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_duoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_duoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_duoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602381514330" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/cn/_51doit/flink" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SqlDemo">
+    <configuration name="CountWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn._51doit.flink.day03.window.CountWindow" />
+      <module name="flink-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LambdaStreamWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn._51doit.flink.day01.LambdaStreamWordCount" />
+      <module name="flink-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapWithState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn._51doit.flink.day05.MapWithState" />
+      <module name="flink-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SqlDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn._51doit.flink.daijiguo.sql.SqlDemo" />
+      <module name="flink-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn._51doit.flink.day01.StreamWordCount" />
+      <module name="flink-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SqlDemo" />
+        <item itemvalue="Application.StreamWordCount" />
+        <item itemvalue="Application.LambdaStreamWordCount" />
+        <item itemvalue="Application.CountWindow" />
+        <item itemvalue="Application.MapWithState" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="708dd3a1-5e1c-4496-a80b-4c247913debb" name="Default Changelist" comment="" />
+      <created>1593646725176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593646725176</updated>
+      <workItem from="1593646727094" duration="2285000" />
+      <workItem from="1593700657490" duration="810000" />
+      <workItem from="1595257759324" duration="594000" />
+      <workItem from="1595460928164" duration="8000" />
+      <workItem from="1596523294690" duration="9000" />
+      <workItem from="1596524951854" duration="3287000" />
+      <workItem from="1596612954368" duration="741000" />
+      <workItem from="1597154535558" duration="2421000" />
+      <workItem from="1597186712455" duration="677000" />
+      <workItem from="1597242169595" duration="2447000" />
+      <workItem from="1597369364005" duration="2975000" />
+      <workItem from="1597706965014" duration="2849000" />
+      <workItem from="1598677909069" duration="475000" />
+      <workItem from="1598943797000" duration="3993000" />
+      <workItem from="1599031404968" duration="5062000" />
+      <workItem from="1599404585656" duration="673000" />
+      <workItem from="1599520896980" duration="780000" />
+      <workItem from="1599606993670" duration="1438000" />
+      <workItem from="1599713543236" duration="4463000" />
+      <workItem from="1600771275921" duration="117000" />
+      <workItem from="1602119969317" duration="39000" />
+      <workItem from="1602120125446" duration="1620000" />
+      <workItem from="1602286440154" duration="17507000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="55553000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49808916" visible="true" weight="0.25250357" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" sideWeight="0.5019108" side_tool="true" weight="0.26108727" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.24968153" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.54140127" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Sequence" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32866243" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.77961785" />
+      <window_info anchor="bottom" id="JRebel Executor" order="15" />
+      <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.26609442" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.0/flink-streaming-java_2.11-1.9.0.jar!/org/apache/flink/streaming/runtime/operators/windowing/WindowOperator.class</url>
+          <line>154</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/runtime/operators/windowing/WindowOperator.java</url>
+          <line>208</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/runtime/operators/windowing/WindowOperator.java</url>
+          <line>239</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/api/operators/AbstractStreamOperator.java</url>
+          <line>575</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/runtime/operators/windowing/WindowOperator.java</url>
+          <line>302</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-runtime_2.11/1.9.2/flink-runtime_2.11-1.9.2-sources.jar!/org/apache/flink/runtime/taskmanager/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9673">
+          <caret line="704" column="21" selection-start-line="704" selection-start-column="12" selection-end-line="704" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/runtime/tasks/StreamTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7939">
+          <caret line="551" selection-start-line="551" selection-end-line="551" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/api/datastream/DataStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="608" column="45" selection-start-line="608" selection-start-column="45" selection-end-line="608" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day01/LambdaStreamWordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-runtime-blink_2.11/1.9.2/flink-table-runtime-blink_2.11-1.9.2.jar!/org/apache/flink/table/runtime/functions/KeyedProcessFunctionWithCleanupState.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/api/functions/KeyedProcessFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="114" column="33" lean-forward="true" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dtwave/open source/flink1.9.0/flink-table/flink-table-runtime-blink/src/main/java/org/apache/flink/table/runtime/functions/KeyedProcessFunctionWithCleanupState.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.9.2/flink-core-1.9.2.jar!/org/apache/flink/api/common/state/StateTtlConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="237" column="38" selection-start-line="237" selection-start-column="38" selection-end-line="237" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day05/MapWithState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dtwave/open source/flink1.9.0/flink-table/flink-table-runtime-blink/src/main/java/org/apache/flink/table/runtime/functions/CleanupState.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/rt.jar!/com/sun/xml/internal/ws/encoding/MIMEPartStreamingDataHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka_2.11/1.9.1/flink-connector-kafka_2.11-1.9.1.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka_2.11/1.9.1/flink-connector-kafka_2.11-1.9.1.jar!/org/apache/flink/streaming/connectors/kafka/internal/FlinkKafkaInternalProducer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="144" column="37" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dtwave/open source/flink1.9.0/flink-connectors/flink-connector-kafka-0.8/src/main/java/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.2.0/kafka-clients-2.2.0-sources.jar!/org/apache/kafka/clients/producer/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day06/MyExactlyOnceParFileSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/test/HttpClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/api/checkpoint/CheckpointedFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="163" column="24" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dtwave/open source/flink1.9.0/flink-connectors/flink-connector-kafka/src/main/java/org/apache/flink/streaming/connectors/kafka/internal/FlinkKafkaInternalProducer.java" />
+    <entry file="file://$USER_HOME$/dtwave/open source/flink1.9.0/flink-connectors/flink-connector-kafka/src/main/java/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-runtime_2.11/1.9.2/flink-runtime_2.11-1.9.2-sources.jar!/org/apache/flink/runtime/state/CheckpointListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/api/functions/sink/TwoPhaseCommitSinkFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="347" column="54" selection-start-line="347" selection-start-column="54" selection-end-line="347" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.2/flink-streaming-java_2.11-1.9.2-sources.jar!/org/apache/flink/streaming/api/environment/StreamExecutionEnvironment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="1273" column="7" lean-forward="true" selection-start-line="1273" selection-start-column="7" selection-end-line="1273" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dtwave/open source/flink1.9.0/flink-yarn/src/main/java/org/apache/flink/yarn/YarnClusterDescriptor.java" />
+    <entry file="file://$PROJECT_DIR$/dependency-reduced-pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.10.1/flink-table-api-java-bridge_2.11-1.10.1.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-common/1.10.1/flink-table-common-1.10.1.jar!/org/apache/flink/table/sources/LookupableTableSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.10.1/flink-table-api-java-bridge_2.11-1.10.1.jar!/org/apache/flink/table/sources/CsvTableSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="224" column="33" lean-forward="true" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day05/StateBackendDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="121" selection-start-line="12" selection-start-column="121" selection-end-line="12" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day04/DataToActivityBeanFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.10.1/flink-table-api-java-bridge_2.11-1.10.1-sources.jar!/org/apache/flink/table/sources/CsvTableSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6426">
+          <caret line="438" column="42" selection-start-line="438" selection-start-column="42" selection-end-line="438" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day01/StreamWordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-common/1.10.1/flink-table-common-1.10.1-sources.jar!/org/apache/flink/table/sources/LookupableTableSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/daijiguo/udaf/CountUdaf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.10.1/flink-table-api-java-1.10.1.jar!/org/apache/flink/table/api/internal/TableEnvironmentImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="355" column="30" selection-start-line="355" selection-start-column="30" selection-end-line="355" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.10.1/flink-table-api-java-1.10.1.jar!/org/apache/flink/table/api/EnvironmentSettings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-planner-blink_2.11/1.10.1/flink-table-planner-blink_2.11-1.10.1.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.10.1/flink-table-api-java-bridge_2.11-1.10.1-sources.jar!/org/apache/flink/table/api/java/StreamTableEnvironment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.10.1/flink-table-api-java-1.10.1.jar!/org/apache/flink/table/api/TableEnvironment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-scala-bridge_2.12/1.11.1/flink-table-api-scala-bridge_2.12-1.11.1.jar!/org/apache/flink/table/api/bridge/scala/StreamTableEnvironment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.11.1/flink-table-api-java-1.11.1.jar!/org/apache/flink/table/api/TableEnvironment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="170" column="14" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.11.1/flink-table-api-java-1.11.1-sources.jar!/org/apache/flink/table/api/TableEnvironment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="986" column="41" selection-start-line="986" selection-start-column="31" selection-end-line="986" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.12/1.11.1/flink-table-api-java-bridge_2.12-1.11.1.jar!/org/apache/flink/table/api/bridge/java/StreamTableEnvironment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="143" column="57" selection-start-line="143" selection-start-column="57" selection-end-line="143" selection-end-column="57" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-planner-blink_2.12/1.11.1/flink-table-planner-blink_2.12-1.11.1.jar!/org/apache/flink/table/planner/plan/nodes/physical/stream/StreamExecCalc.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-planner-blink_2.12/1.11.1/flink-table-planner-blink_2.12-1.11.1.jar!/org/apache/flink/table/planner/plan/nodes/physical/stream/StreamExecGlobalGroupAggregate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.12/1.11.1/flink-streaming-java_2.12-1.11.1.jar!/org/apache/flink/streaming/api/datastream/WindowedStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="304" column="53" selection-start-line="304" selection-start-column="53" selection-end-line="304" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.12/1.11.1/flink-streaming-java_2.12-1.11.1-sources.jar!/org/apache/flink/streaming/api/datastream/WindowedStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="743" column="6" selection-start-line="743" selection-start-column="6" selection-end-line="743" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/day07/MySqlTwoPhaseCommitSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/_51doit/flink/daijiguo/sql/SqlDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
