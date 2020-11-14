@@ -18,7 +18,7 @@ public class StreamWordCount {
 
         //使用StreamExecutionEnvironment创建DataStream
         //Source
-        DataStream<String> lines = env.socketTextStream("192.168.90.88", 9999);
+        DataStream<String> lines = env.socketTextStream("localhost", 9999);
 
         //Transformation开始
 

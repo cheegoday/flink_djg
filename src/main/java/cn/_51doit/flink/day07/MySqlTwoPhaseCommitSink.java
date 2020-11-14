@@ -1,6 +1,6 @@
 package cn._51doit.flink.day07;
 
-import cn.northpark.flink.utils.DruidConnectionPool;
+import cn._51doit.flink.utils.DruidConnectionPool ;
 import org.apache.flink.api.common.ExecutionConfig;
 import org.apache.flink.api.common.typeutils.base.VoidSerializer;
 import org.apache.flink.api.java.tuple.Tuple2;
