@@ -46,7 +46,7 @@
               </filters>
               <transformers>
                 <transformer>
-                  <mainClass>cn._51doit.flink.day01.StreamWordCount</mainClass>
+                  <mainClass>djg.duoyi.day01.StreamWordCount</mainClass>
                 </transformer>
               </transformers>
             </configuration>
