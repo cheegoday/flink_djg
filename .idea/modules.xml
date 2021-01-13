@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/flink-java.iml" filepath="$PROJECT_DIR$/flink-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flink-djg.iml" filepath="$PROJECT_DIR$/flink-djg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/withflink/withflink.iml" filepath="$PROJECT_DIR$/withflink/withflink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/withoutflink/withoutflink.iml" filepath="$PROJECT_DIR$/withoutflink/withoutflink.iml" />
     </modules>
   </component>
 </project>

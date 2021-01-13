@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="flink-java" />
+        <module name="withflink" />
+        <module name="withoutflink" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="flink-java" target="1.8" />
+      <module name="flink-djg" target="1.8" />
+      <module name="withflink" target="1.8" />
+      <module name="withoutflink" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
