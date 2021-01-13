@@ -27,8 +27,9 @@ under the License.
 
     <name>flink-djg</name>
     <modules>
-        <module>withflink</module>
-        <module>withoutflink</module>
+        <module>flink</module>
+        <module>java</module>
+        <module>duoyi</module>
     </modules>
 
     <properties>
