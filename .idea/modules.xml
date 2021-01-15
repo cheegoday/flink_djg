@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/connectors/connectors.iml" filepath="$PROJECT_DIR$/connectors/connectors.iml" />
       <module fileurl="file://$PROJECT_DIR$/duoyi/duoyi.iml" filepath="$PROJECT_DIR$/duoyi/duoyi.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink/flink.iml" filepath="$PROJECT_DIR$/flink/flink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/connectors/flink-connector-redis/flink-connector-redis_2.11.iml" filepath="$PROJECT_DIR$/connectors/flink-connector-redis/flink-connector-redis_2.11.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-djg.iml" filepath="$PROJECT_DIR$/flink-djg.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/java.iml" filepath="$PROJECT_DIR$/java/java.iml" />
     </modules>

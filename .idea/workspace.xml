@@ -2,109 +2,162 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aef08c5-8724-44e7-9ce8-0606158d8c79" name="Default Changelist" comment="package change">
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisTableSink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisTableSinkFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisClusterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisConfigBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisSentinelConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/handler/FlinkJedisClusterConfigHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/handler/FlinkJedisSentinelConfigHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisClusterContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisCommandsContainerBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/container/RedisContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/hanlder/FlinkJedisConfigHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/hanlder/RedisHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/hanlder/RedisHandlerServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/hanlder/RedisMapperHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/RedisCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/RedisCommandDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/RedisDataType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/RedisMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/DecrByExMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/DecrByMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/HIncrByMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/HSetMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/IncrByExMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/IncrByMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/LPushMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/PfAddMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/RPushMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/RowRedisMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/SAddMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/SetExMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/SetMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/ZAddMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/mapper/row/ZIncrByMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/descriptor/Redis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/descriptor/RedisValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/resources/META-INF/services/org.apache.flink.streaming.connectors.redis.common.hanlder.RedisHandler" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/main/resources/META-INF/services/org.apache.flink.table.factories.TableFactory" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/RedisDescriptorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/RedisITCaseBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/RedisSentinelClusterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/RedisSinkITCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/RedisSinkPublishITCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/RedisSinkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/common/RedisHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/common/RedisSinkZIncrByTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisConfigBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/common/config/JedisClusterConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/common/config/JedisPoolConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/common/config/JedisSentinelConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/java/org/apache/flink/streaming/connectors/redis/common/mapper/RedisDataTypeDescriptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectors/flink-connector-redis/src/test/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/duoyi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/duoyi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day01/BatchWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day01/BatchWordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day01/LambdaStreamWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day01/LambdaStreamWordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day01/StreamWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day01/StreamWordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/sources/KafkaSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/sources/KafkaSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/sources/SourceDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/sources/SourceDemo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/sources/SourceDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/sources/SourceDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/sources/TextFileSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/sources/TextFileSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/FoldDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/FoldDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/FoldDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/FoldDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/KeyByDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/KeyByDemo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/KeyByDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/KeyByDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/KeyByDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/KeyByDemo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/MaxDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/MaxDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/OrderBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/OrderBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/ReduceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/ReduceDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/TransformationDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/TransformationDemo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/TransformationDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/TransformationDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/TransformationDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/TransformationDemo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/WordCounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day02/transformations/WordCounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/AddSinkDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/AddSinkDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/PrintSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/PrintSink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/SinkDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/SinkDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/SinkDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/SinkDemo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/StreamWordCountChainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/StreamWordCountChainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/StreamWordCountSharingGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/StreamWordCountSharingGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/CountWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/CountWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/CountWindowAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/CountWindowAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/EventTimeSessionWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/EventTimeSessionWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/KafkaSourceEventTimeTumblingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/KafkaSourceEventTimeTumblingWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/SessionWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/SessionWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/SlidingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/SlidingWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/SlidingWindowAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/SlidingWindowAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/SocketSourceEventTimeSlidingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/SocketSourceEventTimeSlidingWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/SocketSourceEventTimeTumblingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/SocketSourceEventTimeTumblingWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/TumblingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/TumblingWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/TumblingWindowAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day03/window/TumblingWindowAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/ActivityBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day04/ActivityBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/ActivityCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day04/ActivityCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/AsyncGeoToActivityBeanFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day04/AsyncGeoToActivityBeanFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/AsyncQueryActivityLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day04/AsyncQueryActivityLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/DataToActivityBeanFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day04/DataToActivityBeanFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/GeoToActivityBeanFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day04/GeoToActivityBeanFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/MysqlSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day04/MysqlSink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/QueryActivityLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day04/QueryActivityLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/QueryActivityName.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day04/QueryActivityName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day05/MapWithState.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day05/MapWithState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day05/MapWithStateV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day05/MapWithStateV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day05/OperatorStateAndKeyedStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day05/OperatorStateAndKeyedStateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day05/RestartStrategiesDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day05/RestartStrategiesDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day05/StateBackendDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day05/StateBackendDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day06/FlinkKafkaToRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day06/FlinkKafkaToRedis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day06/KafkaSourceV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day06/KafkaSourceV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day06/MyExactlyOnceParFileSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day06/MyExactlyOnceParFileSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day06/MyRedisSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day06/MyRedisSink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day06/OperatorStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day06/OperatorStateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day07/MySqlTwoPhaseCommitSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day07/MySqlTwoPhaseCommitSink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/test/HttpClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/test/HttpClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/utils/DruidConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/utils/DruidConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/utils/FlinkUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/utils/FlinkUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/utils/FlinkUtilsV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/utils/FlinkUtilsV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/flink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/flink.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/aggregationRetract/AccRetractDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/aggregationRetract/AccRetractDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncIO/ElasticsearchAsyncFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/asyncIO/ElasticsearchAsyncFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncIO/FlinkAsyncIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/asyncIO/FlinkAsyncIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncRedisDim/DimensionTableJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisDim/DimensionTableJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncRedisDim/RedisAsyncTableFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisDim/RedisAsyncTableFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncRedisDim/RedisLookupableTableSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisDim/RedisLookupableTableSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/batch/CoGroupDataSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/batch/CoGroupDataSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/cdcDebeziumFormat/DebeziumRetractDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/cdcDebeziumFormat/DebeziumRetractDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/intervalJoin/SimpleTimeIntervalJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/intervalJoin/SimpleTimeIntervalJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/KafkaKerberos.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/kafkaKerberos/KafkaKerberos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/RegistryRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/kafkaKerberos/RegistryRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/RegistryRecordDeserialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/kafkaKerberos/RegistryRecordDeserialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/RegistryRecordSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/kafkaKerberos/RegistryRecordSerialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/sql/SqlDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/sql/SqlDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/sql/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/sql/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/stateProcessorAPI/SateProcessorAPIWriterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/stateProcessorAPI/SateProcessorAPIWriterDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/stateProcessorAPI/StateProcessorAPIReaderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/stateProcessorAPI/StateProcessorAPIReaderDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/timer/CountWithTimestamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/timer/CountWithTimestamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/timer/ProcessTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/timer/ProcessTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/timer/Splitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/timer/Splitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/udaf/Add8H.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/udaf/Add8H.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/udaf/CountUdaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/udaf/CountUdaf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/djg/withoutflink/algorithm/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/djg/algorithm/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/djg/withoutflink/algorithm/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/djg/algorithm/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/djg/withoutflink/directByteBufferGC/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/djg/directByteBufferGC/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/djg/withoutflink/nio/NioDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/djg/nio/NioDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/aggregationRetract/AccRetractDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/aggregationRetract/AccRetractDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/asyncIO/ElasticsearchAsyncFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncIO/ElasticsearchAsyncFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/asyncIO/FlinkAsyncIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncIO/FlinkAsyncIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/asyncRedisDim/DimensionTableJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncRedisDim/DimensionTableJoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/asyncRedisDim/RedisAsyncTableFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncRedisDim/RedisAsyncTableFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/asyncRedisDim/RedisLookupableTableSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncRedisDim/RedisLookupableTableSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/batch/CoGroupDataSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/batch/CoGroupDataSetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/cdcDebeziumFormat/DebeziumRetractDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/cdcDebeziumFormat/DebeziumRetractDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/intervalJoin/SimpleTimeIntervalJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/intervalJoin/SimpleTimeIntervalJoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/kafkaKerberos/KafkaKerberos.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/KafkaKerberos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/kafkaKerberos/RegistryRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/RegistryRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/kafkaKerberos/RegistryRecordDeserialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/RegistryRecordDeserialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/kafkaKerberos/RegistryRecordSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/RegistryRecordSerialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/sql/SqlDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/sql/SqlDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/sql/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/sql/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/stateProcessorAPI/SateProcessorAPIWriterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/stateProcessorAPI/SateProcessorAPIWriterDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/stateProcessorAPI/StateProcessorAPIReaderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/stateProcessorAPI/StateProcessorAPIReaderDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/timer/CountWithTimestamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/timer/CountWithTimestamp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/timer/ProcessTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/timer/ProcessTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/timer/Splitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/timer/Splitter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/udaf/Add8H.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/udaf/Add8H.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/udaf/CountUdaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/udaf/CountUdaf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day01/BatchWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day01/BatchWordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day01/LambdaStreamWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day01/LambdaStreamWordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day01/StreamWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day01/StreamWordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/sources/KafkaSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/sources/KafkaSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/sources/SourceDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/sources/SourceDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/sources/SourceDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/sources/SourceDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/sources/TextFileSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/sources/TextFileSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/FoldDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/FoldDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/FoldDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/FoldDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/KeyByDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/KeyByDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/KeyByDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/KeyByDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/KeyByDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/KeyByDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/MaxDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/MaxDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/OrderBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/OrderBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/ReduceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/ReduceDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/TransformationDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/TransformationDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/TransformationDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/TransformationDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/TransformationDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/TransformationDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day02/transformations/WordCounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/transformations/WordCounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/AddSinkDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/AddSinkDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/PrintSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/PrintSink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/SinkDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/SinkDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/SinkDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/SinkDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/StreamWordCountChainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/StreamWordCountChainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/StreamWordCountSharingGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/StreamWordCountSharingGroupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/CountWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/CountWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/CountWindowAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/CountWindowAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/EventTimeSessionWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/EventTimeSessionWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/KafkaSourceEventTimeTumblingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/KafkaSourceEventTimeTumblingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/SessionWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/SessionWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/SlidingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/SlidingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/SlidingWindowAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/SlidingWindowAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/SocketSourceEventTimeSlidingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/SocketSourceEventTimeSlidingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/SocketSourceEventTimeTumblingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/SocketSourceEventTimeTumblingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/TumblingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/TumblingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day03/window/TumblingWindowAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day03/window/TumblingWindowAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day04/ActivityBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/ActivityBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day04/ActivityCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/ActivityCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day04/AsyncGeoToActivityBeanFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/AsyncGeoToActivityBeanFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day04/AsyncQueryActivityLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/AsyncQueryActivityLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day04/DataToActivityBeanFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/DataToActivityBeanFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day04/GeoToActivityBeanFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/GeoToActivityBeanFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day04/MysqlSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/MysqlSink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day04/QueryActivityLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/QueryActivityLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day04/QueryActivityName.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day04/QueryActivityName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day05/MapWithState.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day05/MapWithState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day05/MapWithStateV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day05/MapWithStateV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day05/OperatorStateAndKeyedStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day05/OperatorStateAndKeyedStateDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day05/RestartStrategiesDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day05/RestartStrategiesDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day05/StateBackendDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day05/StateBackendDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day06/FlinkKafkaToRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day06/FlinkKafkaToRedis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day06/KafkaSourceV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day06/KafkaSourceV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day06/MyExactlyOnceParFileSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day06/MyExactlyOnceParFileSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day06/MyRedisSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day06/MyRedisSink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day06/OperatorStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day06/OperatorStateDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/day07/MySqlTwoPhaseCommitSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day07/MySqlTwoPhaseCommitSink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/test/HttpClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/test/HttpClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/utils/DruidConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/utils/DruidConnectionPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/utils/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/utils/FlinkUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/utils/FlinkUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/utils/FlinkUtilsV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/utils/FlinkUtilsV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/resources/djg.sql" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/resources/djg.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withflink/withflink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/flink.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withoutflink/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withoutflink/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withoutflink/src/main/java/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withoutflink/src/main/java/com/djg/withoutflink/algorithm/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/djg/withoutflink/algorithm/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withoutflink/src/main/java/com/djg/withoutflink/algorithm/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/djg/withoutflink/algorithm/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withoutflink/src/main/java/com/djg/withoutflink/directByteBufferGC/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/djg/withoutflink/directByteBufferGC/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withoutflink/src/main/java/com/djg/withoutflink/nio/NioDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/djg/withoutflink/nio/NioDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withoutflink/src/main/resources/djg.sql" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/resources/djg.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withoutflink/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withoutflink/withoutflink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/withoutflink/target/" />
@@ -112,19 +165,24 @@
     <ignored path="$PROJECT_DIR$/java/target/" />
     <ignored path="$PROJECT_DIR$/duoyi/target/" />
     <ignored path="$PROJECT_DIR$/flink/target/" />
+    <ignored path="$PROJECT_DIR$/connectors/flink-connector-redis/target/" />
+    <ignored path="$PROJECT_DIR$/connectors/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="flink-djg" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncRedisDim/RedisAsyncTableFunction.java">
+        <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisSink/AsyncRedisSinkDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="488">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,48 +191,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/duoyi/pom.xml">
+        <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisTableSink.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+            <state relative-caret-position="79">
+              <caret line="43" column="50" lean-forward="true" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.11.0/flink-table-api-java-bridge_2.11-1.11.0-sources.jar!/org/apache/flink/table/sinks/StreamTableSink.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+            <state relative-caret-position="187">
+              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink/pom.xml">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.11.0/flink-table-api-java-bridge_2.11-1.11.0-sources.jar!/org/apache/flink/table/sinks/UpsertStreamTableSink.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+            <state relative-caret-position="305">
+              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.11.0/flink-table-api-java-bridge_2.11-1.11.0-sources.jar!/org/apache/flink/table/sinks/AppendStreamTableSink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/pom.xml">
+        <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisTableSinkFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="409">
+              <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/duoyi/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -188,36 +258,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>88dcf3a1ff6082abad8f8a665c8bfd9f</find>
-      <find>parallism</find>
-      <find>para</find>
-      <find>environment</find>
-      <find>tableenvironment</find>
-      <find>Builder</find>
-      <find>price</find>
-      <find>jaas</find>
-      <find>djg0108in</find>
-      <find>djg0108out</find>
-      <find>port</find>
-      <find>time</find>
-      <find>invoke(</find>
-      <find>rest</find>
-      <find>kafka</find>
-      <find>elasti</find>
-      <find>table</find>
-      <find>scala-</find>
-      <find>scala-b</find>
-      <find>flink-table-api-scala-bridge</find>
-      <find>bridge</find>
-      <find>fromco</find>
-      <find>fromcollec</find>
-      <find>ordeersData</find>
-      <find>SingleOutputStreamOperator</find>
-      <find>withTimestampAssigner</find>
-      <find>create</find>
-      <find>toap</find>
+      <find>getProducedDataType</find>
+      <find>getReturnType</find>
+      <find>throw</find>
+      <find>pass</find>
+      <find>createDataStreamGroupAggregateFunction</find>
+      <find>GroupTableAggProcessFunction</find>
+      <find>async</find>
       <find>fromDataStream</find>
-      <find>payTime</find>
+      <find>janino</find>
+      <find>flink-streaming-java_${scala.binary.version}</find>
+      <find>flink-table-api-java-bridge_2.11</find>
+      <find>flink-table-api-java-bridge</find>
+      <find>jedis</find>
+      <find>flink-table-api-java</find>
+      <find>flink-table-planner</find>
+      <find>flink-table-common</find>
+      <find>flink-test-utils</find>
+      <find>flink-streaming-java_</find>
+      <find>flink-streaming-java</find>
+      <find>sql</find>
+      <find>flink-sql-connector-kafka-0.11</find>
+      <find>0.10</find>
+      <find>release</find>
+      <find>kafka</find>
+      <find>flink-connector-kafka-0.11_${scala.binary.version}</find>
+      <find>flink-sql-connector-kafka-0.11_</find>
+      <find>checkpoint</find>
+      <find>exact</find>
+      <find>REDIS_MODE</find>
+      <find>change</find>
     </findStrings>
     <replaceStrings>
       <replace>KeyedValueState</replace>
@@ -228,10 +298,15 @@
       <dir>$PROJECT_DIR$/withflink</dir>
       <dir>$PROJECT_DIR$/withflink/src/main/java/com/djg/flink</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://scala-decompiled/AggregateUtil.decompiled.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="dummy://scala-decompiled/AggregateUtil.decompiled.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -263,10 +338,19 @@
         <option value="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/intervalJoin/SimpleTimeIntervalJoin.scala" />
         <option value="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/intervalJoin/SimpleTimeIntervalJoin.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/duoyi/pom.xml" />
-        <option value="$PROJECT_DIR$/flink/pom.xml" />
         <option value="$PROJECT_DIR$/java/pom.xml" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisDim/RedisAsyncTableFunction.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/connectors/flink-connector-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/connectors/pom.xml" />
+        <option value="$PROJECT_DIR$/flink/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/com/djg/utils/EnvUtil.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisDim/DimensionTableJoin.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/com/djg/intervalJoin/SimpleTimeIntervalJoin.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/com/djg/sql/SqlDemo.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisSink/AsyncRedisSinkDemo.java" />
       </list>
     </option>
   </component>
@@ -277,9 +361,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="x" value="-254" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -300,7 +385,47 @@
             <path>
               <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
-              <item name="duoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-connector-redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-connector-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-connector-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-connector-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-connector-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
@@ -310,12 +435,72 @@
             <path>
               <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="djg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink_djg" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="djg" type="462c0819:PsiDirectoryNode" />
+              <item name="asyncRedisSink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-table-api-java-bridge_2.11:1.11.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-table-api-java-bridge_2.11:1.11.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="flink-table-api-java-bridge_2.11-1.11.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-table-api-java-bridge_2.11:1.11.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="flink-table-api-java-bridge_2.11-1.11.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="table" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-djg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.flink:flink-table-api-java-bridge_2.11:1.11.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="flink-table-api-java-bridge_2.11-1.11.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="table" type="462c0819:PsiDirectoryNode" />
+              <item name="sinks" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -327,7 +512,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610507144230" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610674489648" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -339,6 +524,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flink/src/main/resources" />
       <recent name="$PROJECT_DIR$/duoyi/src/main/java/com/duoyi" />
       <recent name="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/cdcDebeziumFormat" />
       <recent name="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/aggregationRetract" />
@@ -347,6 +533,8 @@
       <recent name="com.djg.flink.custom.kafka" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/connectors" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/duoyi/src/main/resources" />
       <recent name="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/asyncRedisDim" />
       <recent name="$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/asyncIO" />
@@ -364,18 +552,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SimpleTimeIntervalJoin (1)">
-    <configuration name="DimensionTableJoin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.djg.flink.custom.asyncRedisDim.DimensionTableJoin" />
+  <component name="RunManager" selected="Application.AsyncRedisSinkDemo">
+    <configuration name="AsyncRedisSinkDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.djg.asyncRedisSink.AsyncRedisSinkDemo" />
       <module name="flink" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaKerberos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.djg.flink.custom.kafkaKerberos.KafkaKerberos" />
+    <configuration name="DimensionTableJoin (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.djg.asyncRedisDim.DimensionTableJoin" />
       <module name="flink" />
-      <option name="PROGRAM_PARAMETERS" value="192.168.90.71:9092 djg0108in djg0108out latest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DimensionTableJoin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.djg.flink.custom.asyncRedisDim.DimensionTableJoin" />
+      <module name="flink" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -387,34 +581,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleTimeIntervalJoin" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="SimpleTimeIntervalJoin" />
-      <module name="flink" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StateProcessorAPIReaderDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.djg.flink.custom.stateProcessorAPI.StateProcessorAPIReaderDemo" />
+    <configuration name="SimpleTimeIntervalJoin (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.djg.intervalJoin.SimpleTimeIntervalJoin" />
       <module name="flink" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.KafkaKerberos" />
-      <item itemvalue="Application.StateProcessorAPIReaderDemo" />
-      <item itemvalue="Application.SimpleTimeIntervalJoin" />
       <item itemvalue="Application.DimensionTableJoin" />
       <item itemvalue="Application.SimpleTimeIntervalJoin (1)" />
+      <item itemvalue="Application.SimpleTimeIntervalJoin (2)" />
+      <item itemvalue="Application.DimensionTableJoin (1)" />
+      <item itemvalue="Application.AsyncRedisSinkDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AsyncRedisSinkDemo" />
+        <item itemvalue="Application.SimpleTimeIntervalJoin (2)" />
+        <item itemvalue="Application.DimensionTableJoin (1)" />
         <item itemvalue="Application.SimpleTimeIntervalJoin (1)" />
         <item itemvalue="Application.DimensionTableJoin" />
-        <item itemvalue="Application.KafkaKerberos" />
-        <item itemvalue="Application.SimpleTimeIntervalJoin" />
-        <item itemvalue="Application.StateProcessorAPIReaderDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -449,7 +636,7 @@
       <workItem from="1610076230600" duration="1000" />
       <workItem from="1610096321981" duration="4737000" />
       <workItem from="1610373944896" duration="6774000" />
-      <workItem from="1610435700094" duration="16675000" />
+      <workItem from="1610435700094" duration="65058000" />
     </task>
     <task id="LOCAL-00001" summary="package change">
       <created>1606831787983</created>
@@ -494,37 +681,72 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93801000" />
+    <option name="totallyTimeSpent" value="142184000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="-254" y="-1057" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28826895" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59351623" visible="true" weight="0.23908414" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Favorites" order="5" sideWeight="0.4064838" side_tool="true" visible="true" weight="0.23908414" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5464968" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.16891192" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.43312103" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.46528497" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Sequence" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.48025477" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32953367" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.30569947" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.58343947" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.1988555" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.2891374" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="PlantUML" order="10" />
+      <window_info anchor="right" id="Structure" order="11" weight="0.19595315" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.595122" visible="true" weight="0.3365282" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.40487805" side_tool="true" visible="true" weight="0.3365282" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.15025906" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4254777" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Sequence" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.30569947" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.58343947" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.19861555" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
@@ -533,41 +755,6 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="PlantUML" order="10" />
       <window_info anchor="right" id="Structure" order="11" weight="0.19599427" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25894135" />
-      <window_info id="Designer" order="1" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4242038" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.11606218" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Sequence" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32953367" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.19914803" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="PlantUML" order="10" />
-      <window_info anchor="right" id="Structure" order="11" weight="0.24973376" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,493 +794,420 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/KafkaKerberos.java</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisDim/RedisAsyncTableFunction.java</url>
+          <line>60</line>
           <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.11_2.11/1.9.0/flink-connector-kafka-0.11_2.11-1.9.0-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.java</url>
-          <line>625</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.11_2.11/1.9.0/flink-connector-kafka-0.11_2.11-1.9.0-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.java</url>
-          <line>698</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.11_2.11/1.9.0/flink-connector-kafka-0.11_2.11-1.9.0-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.java</url>
-          <line>718</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.11_2.11/1.9.0/flink-connector-kafka-0.11_2.11-1.9.0-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.java</url>
-          <line>733</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.11_2.11/1.9.0/flink-connector-kafka-0.11_2.11-1.9.0-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.java</url>
-          <line>744</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.11_2.11/1.9.0/flink-connector-kafka-0.11_2.11-1.9.0-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.java</url>
-          <line>788</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.11_2.11/1.9.0/flink-connector-kafka-0.11_2.11-1.9.0-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.java</url>
-          <line>802</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/dtwave/open_source/flink1.9.0/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/sink/TwoPhaseCommitSinkFunction.java</url>
-          <line>305</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/dtwave/open_source/flink1.9.0/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/sink/TwoPhaseCommitSinkFunction.java</url>
-          <line>342</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/dtwave/open_source/flink1.9.0/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/sink/TwoPhaseCommitSinkFunction.java</url>
-          <line>265</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.0/flink-streaming-java_2.11-1.9.0.jar!/org/apache/flink/streaming/api/functions/sink/TwoPhaseCommitSinkFunction.class</url>
-          <line>120</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.0/flink-streaming-java_2.11-1.9.0.jar!/org/apache/flink/streaming/api/functions/sink/TwoPhaseCommitSinkFunction.class</url>
-          <line>151</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.0/flink-streaming-java_2.11-1.9.0.jar!/org/apache/flink/streaming/api/functions/sink/TwoPhaseCommitSinkFunction.class</url>
-          <line>164</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.9.0/flink-streaming-java_2.11-1.9.0.jar!/org/apache/flink/streaming/api/functions/sink/TwoPhaseCommitSinkFunction.class</url>
-          <line>206</line>
-          <properties />
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>redisFuture.get()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/dtwave/open_source/flink1.9.0/flink-connectors/flink-connector-kafka/target/classes/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-planner-blink_2.11/1.11.0/flink-table-planner-blink_2.11-1.11.0-sources.jar!/org/apache/flink/table/planner/codegen/LookupJoinCodeGenerator.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#2176#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1219">
+          <caret line="153" column="4" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/dtwave/open_source/flink1.9.0/flink-connectors/flink-connector-kafka/src/main/java/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-planner-blink_2.11/1.11.0/flink-table-planner-blink_2.11-1.11.0-sources.jar!/org/apache/flink/table/planner/plan/nodes/physical/stream/StreamExecLegacySink.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        <state relative-caret-position="184">
+          <caret line="157" column="8" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/RegistryRecord.java">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.12-sources.jar!/scala/collection/Iterator.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="191">
+          <caret line="890" column="30" selection-start-line="890" selection-start-column="30" selection-end-line="890" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/sql/Word.java">
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/asyncIO/ElasticsearchAsyncFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/kafkaKerberos/KafkaKerberos.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-common/1.11.0/flink-table-common-1.11.0-sources.jar!/org/apache/flink/table/functions/UserDefinedFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#3545#3561#0" expanded="true" />
-            <element signature="e#4458#4480#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="202">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncRedisDim/RedisLookupableTableSource.java">
+    <entry file="file://$PROJECT_DIR$/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/handler/FlinkJedisClusterConfigHandler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/handler/FlinkJedisClusterConfigHandler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+        <state relative-caret-position="312">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncRedisDim/DimensionTableJoin.java">
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisDim/RedisLookupableTableSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        <state relative-caret-position="354">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2953#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-scala_2.11/1.11.0/flink-streaming-scala_2.11-1.11.0.jar!/org/apache/flink/streaming/api/scala/DataStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="94" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0.jar!/org/apache/flink/api/common/eventtime/TimestampAssigner.class">
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisDim/RedisAsyncTableFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.11.0/flink-streaming-java_2.11-1.11.0-sources.jar!/org/apache/flink/streaming/api/functions/TimestampAssigner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="88" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.11.0/flink-streaming-java_2.11-1.11.0-sources.jar!/org/apache/flink/streaming/api/functions/AssignerWithPeriodicWatermarks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar!/scala/Tuple3.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-scala_2.11/1.11.0/flink-streaming-scala_2.11-1.11.0-sources.jar!/org/apache/flink/streaming/api/scala/StreamExecutionEnvironment.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="465" column="6" selection-start-line="465" selection-start-column="6" selection-end-line="465" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-scala_2.11/1.11.0/flink-streaming-scala_2.11-1.11.0-sources.jar!/org/apache/flink/streaming/api/scala/DataStream.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="852" column="6" selection-start-line="852" selection-start-column="6" selection-end-line="852" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-scala-bridge_2.11/1.9.0/flink-table-api-scala-bridge_2.11-1.9.0.jar!/org/apache/flink/table/api/scala/DataStreamConversions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-scala-bridge_2.11/1.11.0/flink-table-api-scala-bridge_2.11-1.11.0.jar!/org/apache/flink/table/api/bridge/scala/DataStreamConversions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day02/sources/SourceDemo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" column="53" selection-start-line="19" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/sql/SqlDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-213">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="414">
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.11.0/flink-table-api-java-bridge_2.11-1.11.0.jar!/org/apache/flink/table/api/bridge/java/StreamTableEnvironment.class">
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        <state relative-caret-position="405">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="39" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-common/1.11.0/flink-table-common-1.11.0.jar!/org/apache/flink/table/expressions/Expression.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.11.0/flink-table-api-java-1.11.0.jar!/org/apache/flink/table/api/Expressions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.11.0/flink-table-api-java-1.11.0-sources.jar!/org/apache/flink/table/expressions/UnresolvedReferenceExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-          <folding>
-            <element signature="e#1451#1452#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.11.0/flink-table-api-java-1.11.0-sources.jar!/org/apache/flink/table/expressions/ApiExpressionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="251" column="40" selection-start-line="251" selection-start-column="40" selection-end-line="251" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.11.0/flink-table-api-java-1.11.0-sources.jar!/org/apache/flink/table/api/Expressions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
-          <folding>
-            <element signature="e#3104#3105#0" expanded="true" />
-            <element signature="e#3156#3157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0.jar!/org/apache/flink/api/common/eventtime/WatermarkStrategy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/duoyi/day01/LambdaStreamWordCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/api/common/eventtime/WatermarkGeneratorSupplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/time/Duration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/api/common/eventtime/WatermarkStrategyWithIdleness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/api/common/eventtime/RecordTimestampAssigner.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.11.0/flink-streaming-java_2.11-1.11.0-sources.jar!/org/apache/flink/streaming/api/TimeCharacteristic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.11.0/flink-streaming-java_2.11-1.11.0-sources.jar!/org/apache/flink/streaming/api/datastream/DataStream.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/api/java/tuple/Tuple2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="896" column="41" selection-start-line="896" selection-start-column="41" selection-end-line="896" selection-end-column="41" />
+        <state relative-caret-position="312">
+          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/api/common/eventtime/WatermarkGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/api/common/eventtime/BoundedOutOfOrdernessWatermarks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/api/common/eventtime/SerializableTimestampAssigner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/api/common/eventtime/TimestampAssigner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/api/common/eventtime/TimestampAssignerSupplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/src.zip!/java/sql/Timestamp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/api/common/eventtime/WatermarkStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="165" column="36" selection-start-line="165" selection-start-column="36" selection-end-line="165" selection-end-column="36" />
-          <folding>
-            <element signature="e#8021#8022#0" expanded="true" />
-            <element signature="e#8073#8074#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.11.0/flink-streaming-java_2.11-1.11.0-sources.jar!/org/apache/flink/streaming/api/datastream/SingleOutputStreamOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="476">
+            <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.11.0/flink-table-api-java-1.11.0-sources.jar!/org/apache/flink/table/api/TableEnvironment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
+        <state relative-caret-position="305">
           <caret line="916" column="16" selection-start-line="916" selection-start-column="16" selection-end-line="916" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/withflink/src/main/java/com/djg/flink/custom/intervalJoin/SimpleTimeIntervalJoin.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-runtime-blink_2.11/1.11.0/flink-table-runtime-blink_2.11-1.11.0-sources.jar!/org/apache/flink/table/runtime/generated/CompileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="304">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-planner-blink_2.11/1.11.0/flink-table-planner-blink_2.11-1.11.0-sources.jar!/org/apache/flink/table/planner/codegen/FunctionCodeGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.11.0/flink-streaming-java_2.11-1.11.0-sources.jar!/org/apache/flink/streaming/api/datastream/DataStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="472" column="25" selection-start-line="472" selection-start-column="25" selection-end-line="472" selection-end-column="25" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#19821#19822#0" expanded="true" />
+            <element signature="e#19883#19884#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.11.0/flink-table-api-java-bridge_2.11-1.11.0-sources.jar!/org/apache/flink/table/api/bridge/java/StreamTableEnvironment.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-0.10_2.11/1.11.0/flink-connector-kafka-0.10_2.11-1.11.0.jar!/org/apache/flink/streaming/connectors/kafka/internal/KafkaConsumerThread.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="302" column="4" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
+        <state relative-caret-position="119">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/intervalJoin/SimpleTimeIntervalJoin.java">
+    <entry file="file://$PROJECT_DIR$/connectors/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1839#1874#0" expanded="true" />
-            <element signature="e#2498#2533#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/kafkaKerberos/KafkaKerberos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        <state relative-caret-position="170">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
         </state>
       </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.12-sources.jar!/scala/collection/immutable/StringLike.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="202" column="6" selection-start-line="202" selection-start-column="6" selection-end-line="202" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/flink/custom/asyncRedisDim/RedisAsyncTableFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/duoyi/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/duoyi/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+        <state relative-caret-position="307">
+          <caret line="220" column="51" lean-forward="true" selection-start-line="220" selection-start-column="51" selection-end-line="220" selection-end-column="51" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/flink/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="352">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.11.0/flink-table-api-java-1.11.0-sources.jar!/org/apache/flink/table/api/TableResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-435">
+          <caret line="108" column="46" lean-forward="true" selection-start-line="108" selection-start-column="46" selection-end-line="108" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.11.0/flink-table-api-java-1.11.0-sources.jar!/org/apache/flink/table/api/Table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="369">
+          <caret line="1483" lean-forward="true" selection-start-line="1483" selection-end-line="1483" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-runtime_2.11/1.11.0/flink-runtime_2.11-1.11.0-sources.jar!/org/apache/flink/runtime/state/StateBackend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.11.0/flink-streaming-java_2.11-1.11.0-sources.jar!/org/apache/flink/streaming/api/environment/StreamExecutionEnvironment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="566" column="51" lean-forward="true" selection-start-line="566" selection-start-column="51" selection-end-line="566" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0-sources.jar!/org/apache/flink/core/fs/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="184" column="23" lean-forward="true" selection-start-line="184" selection-start-column="23" selection-end-line="184" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-runtime_2.11/1.11.0/flink-runtime_2.11-1.11.0-sources.jar!/org/apache/flink/runtime/state/filesystem/FsStateBackend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="141" column="19" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
+          <folding>
+            <element signature="e#7106#7107#0" expanded="true" />
+            <element signature="e#7146#7147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/duoyi/src/main/java/com/duoyi/day05/StateBackendDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="32" column="62" selection-start-line="32" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/intervalJoin/SimpleTimeIntervalJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="29" column="162" selection-start-line="29" selection-start-column="162" selection-end-line="29" selection-end-column="162" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/sql/SqlDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/utils/EnvUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="13" column="80" lean-forward="true" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisSentinelConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisConfigBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-common/1.11.0/flink-table-common-1.11.0-sources.jar!/org/apache/flink/table/descriptors/ConnectorDescriptorValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisClusterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/descriptor/Redis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/descriptor/RedisValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisDim/DimensionTableJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="31" column="167" selection-start-line="31" selection-start-column="167" selection-end-line="31" selection-end-column="167" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/com/djg/asyncRedisSink/AsyncRedisSinkDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-common/1.11.0/flink-table-common-1.11.0-sources.jar!/org/apache/flink/table/sinks/TableSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-467">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.11.0/flink-table-api-java-bridge_2.11-1.11.0-sources.jar!/org/apache/flink/table/sinks/StreamTableSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisTableSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="43" column="50" lean-forward="true" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.11.0/flink-table-api-java-bridge_2.11-1.11.0-sources.jar!/org/apache/flink/table/sinks/UpsertStreamTableSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-planner_2.11/1.11.0/flink-table-planner_2.11-1.11.0-sources.jar!/org/apache/flink/table/runtime/types/CRow.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="68" lean-forward="true" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java-bridge_2.11/1.11.0/flink-table-api-java-bridge_2.11-1.11.0-sources.jar!/org/apache/flink/table/sinks/AppendStreamTableSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectors/flink-connector-redis/src/main/java/org/apache/flink/streaming/connectors/redis/RedisTableSinkFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

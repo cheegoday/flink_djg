@@ -30,6 +30,7 @@ under the License.
         <module>flink</module>
         <module>java</module>
         <module>duoyi</module>
+        <module>connectors</module>
     </modules>
 
     <properties>
@@ -43,6 +44,9 @@ under the License.
         <fastjson.version>1.2.57</fastjson.version>
         <slf4j.version>1.7.7</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
+        <jedis.version>2.9.0</jedis.version>
+        <embedded-redis.version>0.6</embedded-redis.version>
+
     </properties>
 
     <repositories>
@@ -51,10 +55,10 @@ under the License.
             <name>Apache Development Snapshot Repository</name>
             <url>https://repository.apache.org/content/repositories/snapshots/</url>
             <releases>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
     </repositories>
@@ -91,6 +95,34 @@ under the License.
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.kstyrc</groupId>
+                <artifactId>embedded-redis</artifactId>
+                <version>${embedded-redis.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-table-api-java</artifactId>
+                <version>${flink.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-test-utils_${scala.binary.version}</artifactId>
+                <version>1.11.1</version>
+                <scope>test</scope>
+            </dependency>
+
             <!--redis异步连接  lettuce-->
             <dependency>
                 <groupId>io.lettuce</groupId>
@@ -183,11 +215,23 @@ under the License.
                 <version>${flink.version}</version>
             </dependency>
 
-            <!--<dependency>-->
-            <!--<groupId>org.apache.flink</groupId>-->
-            <!--<artifactId>flink-sql-connector-kafka_${scala.binary.version}</artifactId>-->
-            <!--<version>${flink.version}</version>-->
-            <!--</dependency>-->
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-sql-connector-kafka-0.11_${scala.binary.version}</artifactId>
+                <version>${flink.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-connector-kafka_${scala.binary.version}</artifactId>
+                <version>${flink.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-sql-connector-kafka_${scala.binary.version}</artifactId>
+                <version>${flink.version}</version>
+            </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-json -->
             <dependency>

@@ -7,6 +7,11 @@
 - Redis Dimension
 etc.
 
+## About Connectors：
+- Flink Redis Source Connector
+- Flink Redis Sink Connector
+etc.
+
 ## About Java：
 - NIO
 - Direct ByteBuffer

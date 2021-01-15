@@ -8,12 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="duoyi" />
         <module name="flink" />
+        <module name="flink-connector-redis_2.11" />
         <module name="java" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="connectors" target="1.8" />
       <module name="duoyi" target="1.8" />
       <module name="flink" target="1.8" />
+      <module name="flink-connector-redis_2.11" target="1.8" />
       <module name="flink-djg" target="1.8" />
       <module name="java" target="1.8" />
       <module name="withflink" target="1.8" />
