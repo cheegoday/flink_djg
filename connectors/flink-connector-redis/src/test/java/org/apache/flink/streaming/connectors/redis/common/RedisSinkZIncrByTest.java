@@ -20,7 +20,7 @@ import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.source.SourceFunction;
-import org.apache.flink.streaming.connectors.redis.RedisITCaseBase;
+import org.apache.flink.streaming.connectors.redis.RedisStandaloneITCaseBase;
 import org.apache.flink.streaming.connectors.redis.RedisSink;
 import org.apache.flink.streaming.connectors.redis.common.config.FlinkJedisClusterConfig;
 import org.apache.flink.streaming.connectors.redis.common.mapper.RedisCommand;
@@ -35,7 +35,7 @@ import java.net.MalformedURLException;
 import java.util.HashSet;
 import java.util.Optional;
 
-public class RedisSinkZIncrByTest extends RedisITCaseBase {
+public class RedisSinkZIncrByTest extends RedisStandaloneITCaseBase {
 
     private static final String REDIS_CLUSTER_HOSTS = "redis-01:7000,redis-02:7000,redis-03:7000";
 

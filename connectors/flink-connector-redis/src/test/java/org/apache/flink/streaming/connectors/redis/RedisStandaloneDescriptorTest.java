@@ -18,7 +18,6 @@
 package org.apache.flink.streaming.connectors.redis;
 
 import org.apache.flink.api.common.typeinfo.TypeInformation;
-import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.typeutils.RowTypeInfo;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -33,7 +32,9 @@ import org.apache.flink.types.Row;
 import org.junit.Before;
 import org.junit.Test;
 
-public class RedisDescriptorTest extends RedisITCaseBase {
+import static org.apache.flink.table.api.Expressions.$;
+
+public class RedisStandaloneDescriptorTest extends RedisStandaloneITCaseBase {
 
     private static final String REDIS_KEY = "TEST_KEY";
     private static final Long NUM_ELEMENTS = 2000L;
@@ -57,7 +58,7 @@ public class RedisDescriptorTest extends RedisITCaseBase {
                 .inStreamingMode()
                 .build();
         StreamTableEnvironment tableEnvironment = StreamTableEnvironment.create(env, settings);
-        tableEnvironment.registerDataStream("t1", source, "k, v");
+        tableEnvironment.createTemporaryView("t1", source, $("k"), $("v"));
 
         Redis redis = new Redis()
                 .mode(RedisValidator.REDIS_MODE_STANDALONE)
@@ -71,6 +72,55 @@ public class RedisDescriptorTest extends RedisITCaseBase {
                 .field("k", TypeInformation.of(String.class))
                 .field("v", TypeInformation.of(Long.class)))
                 .createTemporaryTable("redis");
+
+        tableEnvironment.executeSql("insert into redis select k, v from t1");
+        env.execute();
+    }
+
+    @Test
+    public void testRedisDescriptorUsingDDL() throws Exception {
+        DataStreamSource<Row> source = (DataStreamSource<Row>) env.addSource(new TestSourceFunctionString())
+                .returns(new RowTypeInfo(TypeInformation.of(String.class), TypeInformation.of(Long.class)));
+
+        EnvironmentSettings settings = EnvironmentSettings
+                .newInstance()
+                .useOldPlanner()
+                .inStreamingMode()
+                .build();
+        StreamTableEnvironment tableEnvironment = StreamTableEnvironment.create(env, settings);
+        tableEnvironment.createTemporaryView("t1", source, $("k"), $("v"));
+
+
+        String ddl =
+                "CREATE TABLE redis (\n" +
+                        "    `k` STRING,\n" +
+                        "    `v` BIGINT\n" +
+                        ") WITH (\n" +
+                        "    'connector.type' = 'redis',\n" +
+                        "    'redis-mode' = 'cluster',\n" +
+                        "    'server.ip' = '127.0.0.1',\n" +
+                        "    'server.port' = '53393',\n" +
+                        "    'command' = 'SET',\n" +
+                        "    'key.ttl' = '10000'\n" +
+                        ")";
+
+
+/*
+        String ddl =
+                "CREATE TABLE redis (\n" +
+                        "    `k` STRING,\n" +
+                        "    `v` BIGINT\n" +
+                        ") WITH (\n" +
+                        "    'connector.type' = 'redis',\n" +
+                        "    'redis-mode' = 'cluster',\n" +
+                        "    'cluster-nodes' = '127.0.0.1:53393',\n" +
+                        "    'command' = 'SET',\n" +
+                        "    'key.ttl' = '10000'\n" +
+                        ")";
+*/
+
+
+        tableEnvironment.executeSql(ddl);
 
         tableEnvironment.executeSql("insert into redis select k, v from t1");
         env.execute();

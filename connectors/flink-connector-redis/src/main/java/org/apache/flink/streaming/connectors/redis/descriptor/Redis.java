@@ -25,8 +25,10 @@ import java.util.Map;
 
 import static org.apache.flink.streaming.connectors.redis.descriptor.RedisValidator.*;
 
-/**
- * redis descriptor for create redis connector.
+/*
+ * @Author International Dai
+ * @Date 09:58 2021-01-19
+ * @Description 如果使用DDL语句建表，则该类可以废弃
  */
 public class Redis extends ConnectorDescriptor {
 

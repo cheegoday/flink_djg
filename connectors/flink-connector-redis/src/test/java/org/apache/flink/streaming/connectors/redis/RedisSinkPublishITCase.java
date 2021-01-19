@@ -37,7 +37,7 @@ import redis.clients.jedis.JedisPubSub;
 
 import static org.junit.Assert.assertEquals;
 
-public class RedisSinkPublishITCase extends RedisITCaseBase {
+public class RedisSinkPublishITCase extends RedisStandaloneITCaseBase {
 
     private static final int NUM_ELEMENTS = 20;
     private static final String REDIS_CHANNEL = "CHANNEL";

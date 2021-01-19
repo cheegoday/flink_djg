@@ -33,7 +33,7 @@ import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
 
-public class RedisSinkITCase extends RedisITCaseBase {
+public class RedisSinkITCase extends RedisStandaloneITCaseBase {
 
     private FlinkJedisPoolConfig jedisPoolConfig;
     private static final Long NUM_ELEMENTS = 2000L;
