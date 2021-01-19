@@ -32,4 +32,10 @@ public class RedisValidator {
     public static final String SENTINELS_PASSWORD = "sentinels.password";
     public static final String REDIS_KEY_TTL = "key.ttl";
 
+
+    public static final String REDIS_MODE_STANDALONE = "standalone";
+    public static final String REDIS_SERVER_IP = "server.ip";
+    public static final String REDIS_SERVER_PASSWORD = "password";
+    public static final String REDIS_SERVER_PORT = "server.port";
+
 }

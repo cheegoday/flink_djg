@@ -35,6 +35,7 @@ public interface RedisMapperHandler extends RedisHandler {
 
     /**
      * create a correct redis mapper use properties.
+     *
      * @param properties to create redis mapper.
      * @return redis mapper.
      */
@@ -42,12 +43,7 @@ public interface RedisMapperHandler extends RedisHandler {
         String ttl = properties.get(REDIS_KEY_TTL);
         try {
             Class redisMapper = Class.forName(this.getClass().getCanonicalName());
-
-            if (ttl == null) {
-                return (RedisMapper) redisMapper.newInstance();
-            }
-            Constructor c = redisMapper.getConstructor(Integer.class);
-            return (RedisMapper) c.newInstance(Integer.parseInt(ttl));
+            return (RedisMapper) redisMapper.newInstance();
         } catch (Exception e) {
             LOGGER.error("create redis mapper failed", e);
             throw new RuntimeException(e);

@@ -18,6 +18,7 @@
 package org.apache.flink.streaming.connectors.redis;
 
 import org.apache.flink.api.common.typeinfo.TypeInformation;
+import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.typeutils.RowTypeInfo;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -32,14 +33,16 @@ import org.apache.flink.types.Row;
 import org.junit.Before;
 import org.junit.Test;
 
-public class RedisDescriptorTest extends  RedisITCaseBase{
+public class RedisDescriptorTest extends RedisITCaseBase {
 
     private static final String REDIS_KEY = "TEST_KEY";
+    private static final Long NUM_ELEMENTS = 2000L;
+
 
     StreamExecutionEnvironment env;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         env = StreamExecutionEnvironment.getExecutionEnvironment();
     }
 
@@ -57,10 +60,11 @@ public class RedisDescriptorTest extends  RedisITCaseBase{
         tableEnvironment.registerDataStream("t1", source, "k, v");
 
         Redis redis = new Redis()
-                .mode(RedisValidator.REDIS_CLUSTER)
-                .command(RedisCommand.INCRBY_EX.name())
+                .mode(RedisValidator.REDIS_MODE_STANDALONE)
+                .command(RedisCommand.SET.name())
                 .ttl(100000)
-                .property(RedisValidator.REDIS_NODES, REDIS_HOST+ ":" + REDIS_PORT);
+                .property(RedisValidator.REDIS_SERVER_IP, REDIS_HOST + ":" + REDIS_PORT)
+                .property(RedisValidator.REDIS_SERVER_PORT, String.valueOf(REDIS_PORT));
 
         tableEnvironment
                 .connect(redis).withSchema(new Schema()
@@ -69,6 +73,7 @@ public class RedisDescriptorTest extends  RedisITCaseBase{
                 .createTemporaryTable("redis");
 
         tableEnvironment.executeSql("insert into redis select k, v from t1");
+        env.execute();
     }
 
 
@@ -79,12 +84,13 @@ public class RedisDescriptorTest extends  RedisITCaseBase{
 
         @Override
         public void run(SourceContext<Row> ctx) throws Exception {
-            while (running) {
+
+            for (Long i = 0L; i < NUM_ELEMENTS && running; i++) {
+                Thread.sleep(1000);
                 Row row = new Row(2);
                 row.setField(0, REDIS_KEY);
-                row.setField(1, 2L);
+                row.setField(1, i);
                 ctx.collect(row);
-                Thread.sleep(2000L);
             }
         }
 

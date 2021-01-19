@@ -36,7 +36,7 @@ import static org.junit.Assert.assertEquals;
 public class RedisSinkITCase extends RedisITCaseBase {
 
     private FlinkJedisPoolConfig jedisPoolConfig;
-    private static final Long NUM_ELEMENTS = 20L;
+    private static final Long NUM_ELEMENTS = 2000L;
     private static final Long ZERO = 0L;
     private static final Long REDIS_NOT_ASSOCIATED_EXPIRE_FLAG = -1L;
     private static final Long REDIS_KEY_NOT_EXISTS_FLAG = -2L;
@@ -199,6 +199,7 @@ public class RedisSinkITCase extends RedisITCaseBase {
         @Override
         public void run(SourceContext<Tuple2<String, String>> ctx) throws Exception {
             for (int i = 0; i < NUM_ELEMENTS && running; i++) {
+                Thread.sleep(1000);
                 ctx.collect(new Tuple2<>(REDIS_KEY, "message #" + i));
             }
         }
