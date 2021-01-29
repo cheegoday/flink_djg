@@ -97,28 +97,12 @@ public class RedisStandaloneDescriptorTest extends RedisStandaloneITCaseBase {
                         "    `v` BIGINT\n" +
                         ") WITH (\n" +
                         "    'connector.type' = 'redis',\n" +
-                        "    'redis-mode' = 'cluster',\n" +
+                        "    'redis-mode' = 'standalone',\n" +
                         "    'server.ip' = '127.0.0.1',\n" +
                         "    'server.port' = '53393',\n" +
                         "    'command' = 'SET',\n" +
                         "    'key.ttl' = '10000'\n" +
                         ")";
-
-
-/*
-        String ddl =
-                "CREATE TABLE redis (\n" +
-                        "    `k` STRING,\n" +
-                        "    `v` BIGINT\n" +
-                        ") WITH (\n" +
-                        "    'connector.type' = 'redis',\n" +
-                        "    'redis-mode' = 'cluster',\n" +
-                        "    'cluster-nodes' = '127.0.0.1:53393',\n" +
-                        "    'command' = 'SET',\n" +
-                        "    'key.ttl' = '10000'\n" +
-                        ")";
-*/
-
 
         tableEnvironment.executeSql(ddl);
 

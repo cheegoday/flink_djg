@@ -1,4 +1,4 @@
-package com.djg.udaf;
+package com.djg;
 
 import org.apache.flink.table.functions.AggregateFunction;
 
