@@ -8,7 +8,7 @@ CREATE TABLE djg0920
     eincome   VARCHAR
 )
 WITH (
-    'connector' = 'kafka',
+    'connector' = 'kafka0.11',
     'topic' = 'djg0920',
     'properties.bootstrap.servers' = '192.168.90.71:9092',
     'properties.group.id' = 'testGroup',

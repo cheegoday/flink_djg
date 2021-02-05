@@ -33,6 +33,7 @@ under the License.
         <module>duoyi</module>
         <module>connectors</module>
         <module>kafka-learning</module>
+        <module>utils</module>
     </modules>
 
     <properties>
@@ -93,6 +94,13 @@ under the License.
             <version>${log4j.version}</version>
             <scope>runtime</scope>
         </dependency>
+
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
     </dependencies>
 
 
@@ -140,7 +148,7 @@ under the License.
             <dependency>
                 <groupId>org.apache.flink</groupId>
                 <artifactId>flink-test-utils_${scala.binary.version}</artifactId>
-                <version>1.11.1</version>
+                <version>1.11.0</version>
                 <scope>test</scope>
             </dependency>
 
@@ -173,13 +181,6 @@ under the License.
             <!--<artifactId>flink-connector-jdbc_${scala.binary.version}</artifactId>-->
             <!--<version>${flink.version}</version>-->
             <!--</dependency>-->
-
-
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.12</version>
-            </dependency>
 
             <dependency>
                 <groupId>org.apache.flink</groupId>
