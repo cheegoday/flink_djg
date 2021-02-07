@@ -51,6 +51,7 @@ under the License.
         <embedded-redis.version>0.6</embedded-redis.version>
         <guava.version>18.0</guava.version>
         <kafka.version>2.2.0</kafka.version>
+        <junit.version>4.12</junit.version>
     </properties>
 
     <repositories>
@@ -99,7 +100,7 @@ under the License.
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
         </dependency>
     </dependencies>
 

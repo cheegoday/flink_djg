@@ -1,4 +1,4 @@
-package com.djg.LocalStreamEnvironment;
+package com.djg.localStreamEnvironment;
 
 import com.djg.ConfigurationUtils;
 import com.djg.FileUtils;
@@ -22,6 +22,7 @@ public class StreamWordCount {
         Configuration configuration = ConfigurationUtils.getConfigurationByFlinkConf("/tmp");
         configuration.setString("metrics.reporter.promgateway.jobName","国际戴专属JOB");
         configuration.setString("yarn.application.type","国际戴专属任务类型");
+        configuration.setString("metrics.reporter.promgateway.groupingKey","name=daijiguo;sex=male");
 
         LocalStreamEnvironment env = new LocalStreamEnvironment(configuration);
 
