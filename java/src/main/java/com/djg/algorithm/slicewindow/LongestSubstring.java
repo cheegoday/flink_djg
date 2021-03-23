@@ -2,7 +2,7 @@ package com.djg.algorithm.slicewindow;
 
 import java.util.HashMap;
 import static java.lang.StrictMath.max;
-// 无重复字符的最长子串
+// 最长不含重复字符的子字符串
 
 
 // 遇到子串问题，首先想到的就是滑动窗口
