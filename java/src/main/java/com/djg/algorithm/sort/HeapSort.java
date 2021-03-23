@@ -1,4 +1,4 @@
-package com.djg.algorithm;
+package com.djg.algorithm.sort;
 
 import java.util.Arrays;
 

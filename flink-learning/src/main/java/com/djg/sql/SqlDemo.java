@@ -39,8 +39,8 @@ public class SqlDemo {
                 "  'connector.version' = 'universal',  -- kafka 版本\n" +
                 "  'connector.topic' = 'djg1010',  -- kafka topic\n" +
                 "  'connector.startup-mode' = 'latest-offset', -- 从最新的 offset 开始读取\n" +
-                "  'connector.properties.zookeeper.connect' = 'localhost:2181',\n" +
-                "  'connector.properties.bootstrap.servers' = 'localhost:9092',\n" +
+                "  'connector.properties.zookeeper.connect' = '192.168.90.71:2181',\n" +
+                "  'connector.properties.bootstrap.servers' = '192.168.90.71:9092',\n" +
                 "  'connector.startup-mode' = 'earliest-offset',\n" +
                 "  'format.type' = 'json',  -- 数据源格式为 json\n" +
                 "  'format.derive-schema' = 'true' -- 从 DDL schema 确定 json 解析规则\n" +
@@ -69,7 +69,7 @@ public class SqlDemo {
 
         DataStream<Tuple2<Boolean, Row>> adaptStream = tEnv.toRetractStream(result, Row.class);
         adaptStream.rebalance();
-        adaptStream.print().setParallelism(10);
+        adaptStream.print().setParallelism(1);
         env.execute();
 
     }

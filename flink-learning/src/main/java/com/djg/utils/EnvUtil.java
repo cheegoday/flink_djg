@@ -20,7 +20,7 @@ public class EnvUtil {
         env.setStreamTimeCharacteristic(timeAttribute);
         env.setParallelism(parallelism);
         env.enableCheckpointing(5000);
-        env.setStateBackend(new FsStateBackend("file:///Users/djg/Downloads/checkpoints"));
+        env.setStateBackend(new FsStateBackend("hdfs:///djg/checkpoint"));
         env.getCheckpointConfig().enableExternalizedCheckpoints(CheckpointConfig.ExternalizedCheckpointCleanup.RETAIN_ON_CANCELLATION);
         env.getCheckpointConfig().setCheckpointingMode(CheckpointingMode.EXACTLY_ONCE);
         if (checkpointingMode.equals(CheckpointingMode.AT_LEAST_ONCE)){
