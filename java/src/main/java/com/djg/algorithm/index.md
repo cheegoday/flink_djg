@@ -9,6 +9,7 @@
 
 ### 3. 排序
 #### 3.1 [堆排序](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/sort/HeapSort.java)
+#### 3.2 [归并排序/合并两个有序数组](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/sort/MergeSort.java)
 
 ### 4. 特定算法
 #### 4.1 [LRU](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/LRUCache.java)
