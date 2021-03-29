@@ -18,3 +18,6 @@
 
 ### 5. 二叉树
 #### 5.1 [层序遍历](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/binarytree/LevelOrderTraversal.java)
+
+### 6. 链表
+#### 6.1 [旋转链表](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/list/RotateList.java)
