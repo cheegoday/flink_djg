@@ -2,6 +2,7 @@
 #### 1.1 [删除有序数组中的重复项](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/array/RemoveDuplicatesFromSortedArray.java)
 #### 1.2 [三数之和](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/array/ThreeSum.java)
 #### 1.3 [两数之和](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/array/TwoSum.java)
+#### 1.4 [最长公共前缀](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/array/LongestCommonPrefix.java)
 
 ### 2. 滑动窗口
 #### 2.1 [最长不含重复字符的子字符串](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/slicewindow/LongestSubstring.java)

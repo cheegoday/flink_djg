@@ -6,8 +6,8 @@ import static java.lang.StrictMath.max;
 
 
 // 遇到子串问题，首先想到的就是滑动窗口
-// 第一步：移动右指针寻找可行解
-// 第二步：移动左指针寻找最优解
+// 第一步：移动右指针，直到右指针的值出现重复
+// 第二步：移动左指针，直到右指针的值不再重复
 // 技巧：在窗口中使用map维护字符数
 
 // 输入: "abcabcbb"
@@ -43,7 +43,7 @@ class LongestSubstring {
 
     public static void main(String[] args) {
         LongestSubstring longestSubstring = new LongestSubstring();
-        int result = longestSubstring.lengthOfLongestSubstring("dad");
+        int result = longestSubstring.lengthOfLongestSubstring("pwwkew");
         System.out.println(result);
     }
 }
