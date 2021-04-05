@@ -15,7 +15,16 @@
 ### 4. 特定算法
 #### 4.1 [LRU](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/LRUCache.java)
 
-#### 4.2 [字符串相乘](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/MultiplyString.java)
+#### 4.2 [字符串相乘](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/MultiplyString.java)
 
 ### 5. 二叉树
 #### 5.1 [层序遍历](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/binarytree/LevelOrderTraversal.java)
+
+### 6. 链表
+#### 6.1 [反转链表](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/list/RotateList.java)
+#### 6.2 [K个一组反转链表](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/list/RotateEveryKList.java)
+#### 6.3 [旋转链表](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/list/RotateKList.java)
+
+### 7. 字符串
+#### 7.1 [大数相乘](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/MultiplyStrings.java)
+#### 7.2 [最长回文子串](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/LongestPalindromeSubstring.java)
