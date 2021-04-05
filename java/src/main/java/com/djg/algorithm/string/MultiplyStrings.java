@@ -49,4 +49,9 @@ public class MultiplyStrings {
         }
         return result.toString();
     }
+
+    public static void main(String[] args) {
+        MultiplyStrings multiplyStrings = new MultiplyStrings();
+        System.out.println(multiplyStrings.multiply("123", "45"));
+    }
 }

@@ -43,7 +43,7 @@ class LongestSubstring {
 
     public static void main(String[] args) {
         LongestSubstring longestSubstring = new LongestSubstring();
-        int result = longestSubstring.lengthOfLongestSubstring("pwwkew");
+        int result = longestSubstring.lengthOfLongestSubstring("abcbbcbb");
         System.out.println(result);
     }
 }
