@@ -1,4 +1,4 @@
-package com.djg.algorithm;
+package com.djg.algorithm.datastructure;
 
 import java.util.Deque;
 import java.util.HashMap;

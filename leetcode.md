@@ -12,10 +12,10 @@
 #### 3.1 [堆排序](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/sort/HeapSort.java)
 #### 3.2 [归并排序/合并两个有序数组](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/sort/MergeSort.java)
 
-### 4. 特定算法
-#### 4.1 [LRU](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/LRUCache.java)
+### 4. 数据结构
+#### 4.1 [LRU](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/datastructure/LRUCache.java)
+#### 4.1 [用栈实现队列](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/datastructure/QueueUsingStack.java)
 
-#### 4.2 [字符串相乘](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/MultiplyString.java)
 
 ### 5. 二叉树
 #### 5.1 [层序遍历](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/binarytree/LevelOrderTraversal.java)
