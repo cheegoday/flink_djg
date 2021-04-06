@@ -24,6 +24,8 @@
 #### 6.1 [反转链表](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/list/RotateList.java)
 #### 6.2 [K个一组反转链表](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/list/RotateEveryKList.java)
 #### 6.3 [旋转链表](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/list/RotateKList.java)
+#### 6.3 [合并有序链表](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/list/MergeSortedList.java)
+
 
 ### 7. 字符串
 #### 7.1 [大数相乘](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/MultiplyStrings.java)
