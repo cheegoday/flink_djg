@@ -31,3 +31,6 @@
 #### 7.1 [大数相乘](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/MultiplyStrings.java)
 #### 7.2 [最长回文子串](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/LongestPalindromeSubstring.java)
 #### 7.2 [翻转单词顺序](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/RotateWord.java)
+
+### 8. 动态规划
+#### 8.1 [斐波那契](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/dp/Fibonacci.java)
