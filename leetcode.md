@@ -14,7 +14,7 @@
 
 ### 4. 数据结构
 #### 4.1 [LRU](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/datastructure/LRUCache.java)
-#### 4.1 [用栈实现队列](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/datastructure/QueueUsingStack.java)
+#### 4.2 [用栈实现队列](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/datastructure/QueueUsingStack.java)
 
 
 ### 5. 二叉树
@@ -30,7 +30,9 @@
 ### 7. 字符串
 #### 7.1 [大数相乘](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/MultiplyStrings.java)
 #### 7.2 [最长回文子串](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/LongestPalindromeSubstring.java)
-#### 7.2 [翻转单词顺序](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/RotateWord.java)
+#### 7.3 [翻转单词顺序](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/string/RotateWord.java)
 
 ### 8. 动态规划
 #### 8.1 [斐波那契](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/dp/Fibonacci.java)
+#### 8.2 [连续子数组的最大和](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/dp/ContinuousSubarrayMaxSum.java)
+#### 8.3 [爬楼梯](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/dp/ClimbStairs.java)
