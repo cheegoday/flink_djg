@@ -36,3 +36,8 @@
 #### 8.1 [斐波那契](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/dp/Fibonacci.java)
 #### 8.2 [连续子数组的最大和](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/dp/ContinuousSubarrayMaxSum.java)
 #### 8.3 [爬楼梯](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/dp/ClimbStairs.java)
+#### 8.4 [凑零钱](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/dp/CoinChange.java)
+#### 8.5 [股票的最大利润](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/dp/StockMaxProfit.java)
+
+### 9. 贪心算法
+#### 9.1 [股票的最大利润II](https://github.com/cheegoday/flink_djg/blob/master/java/src/main/java/com/djg/algorithm/greed/StockMaxProfit2.java)
